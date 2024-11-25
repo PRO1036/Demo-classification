@@ -1,0 +1,68 @@
+---
+title: "Demo-08"
+author: "Maribel Diaz"
+date: "2024-11-18"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# 08-Classification
+
+## Prémière partie du cours
+
+Installer des paquets si vous ne les avez pas
+
+```{r}
+packages <- c("tidyverse", "tidymodels", "openintro", "ggridges")
+for (pkg in packages)
+  if (!pkg %in% installed.packages()) {
+    install.packages(pkg)
+    }
+```
+
+Charger les paquets
+
+```{r}
+for (pkg in packages) library(pkg, character.only = T)
+```
+
+Chargez la base de données de CV du paquet openintro, elle contient des informations sur 4 870 personnes. Pour évaluer les facteurs importants, des offres d'emploi ont été identifiées à Boston et à Chicago pour l'étude, et les chercheurs ont créé de nombreux faux CV à envoyer à ces emplois pour voir lesquels susciteraient un rappel.
+
+```{r}
+data <- resume
+```
+
+1.  Faites un "glimpse" de la base de données et sélectionnez une variable catégorielle avec une distribution binomiale (0 ou 1) pour construire une régression logistique.
+
+```{r}
+
+```
+
+2.  Tracez la distribution de « received_callback » en fonction de la variable que vous avez choisie à l'aide de `geom_jitter(alpha = 0.2) + geom_line()`.
+
+```{r}
+
+```
+
+3.  La relation peut-elle être décrite par un modèle linéaire ?
+
+R:
+
+4.  Ajustons un GLM au données.
+
+```{r}
+
+```
+
+5.  Quelle est l'équation du modèle ? Effectuez une prédiction par substitution de la variable catégorielle pour prédire la probabilité de recevoir un rappel, sur la base de la valeur des variables descriptives.
+
+```{r}
+
+```
+
+ R :
+
+

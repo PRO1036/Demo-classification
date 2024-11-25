@@ -1,0 +1,58 @@
+---
+title: "Demo_08_partie2"
+author: "Maribel Diaz"
+date: "2024-11-19"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Installer des paquets si vous ne les avez pas
+
+```{r}
+packages <- c("tidyverse", "tidymodels", "openintro", "ggridges", "patchwork",
+              "skimr")
+for (pkg in packages)
+  if (!pkg %in% installed.packages()) {
+    install.packages(pkg)
+    }
+```
+
+Charger les paquets
+
+```{r}
+for (pkg in packages) library(pkg, character.only = T)
+```
+
+6.  Divisez la base des données (fractionnement) en entrainement et test.
+
+```{r}
+
+
+```
+
+7. Faites des barplot pour évalué lesquelles variables explicatives vous voulez utiliser pour votre GLM.
+
+```{r}
+
+```
+
+
+8. Faites une modèle avec toutes les variables binaire de la base de données "resume" qui est dans le package "openintro".
+
+```{r}
+
+```
+
+9. Faites des prédictions en utilisant les données de test.
+
+```{r}
+
+```
+
+10. Evaluez la performance de votre modèle en utilisant une ROC. C'est quoi la valeur du l'aire sous la courbe ?
+```{r}
+
+```
